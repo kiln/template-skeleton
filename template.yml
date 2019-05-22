@@ -1,0 +1,73 @@
+# The 'id' should be a string that uniquely identifies your template
+id: ''
+name: Untitled Flourish template
+description: A Flourish template
+
+# This template is compatible with SDK version 3
+sdk_version: 3
+
+build:
+  # Defines the build processes used to build your template from source.
+  # You can have any number of build processes, and changes to the relevant
+  # files will trigger the appropriate build. Here we define build scripts
+  # for JavaScript and CSS.
+
+  src:
+    script: npm run build
+    # You can specify a whole directory, or individual files, or both.
+    # A change inside the directory or to any of the listed files will
+    # trigger a rebuild and reload.
+    directory: src
+    files:
+      - rollup.config.js
+
+  less:
+    script: npm run less
+    directory: less
+
+settings:
+  # Creates a settings panel that enables the end user to set the default state for
+  # individual visualisations made with this template.
+  #
+  # Available types:
+  # • "number" >> gives a number input. Optionally add "min:", "max:", and "step:" properties.
+  # • "string" >> gives an text input
+  # • "text" >> gives a textarea
+  # • "boolean" >> gives a checkbox
+  # • "color" >> gives a color picker
+  # • "code" >> same as text but with a monospace font and text-wrapping control.
+  # • "font" >> gives a font picker
+  # • "url" >> gives a single-line text input with an upload button next to it
+  #
+  # There are additional properties for dropdowns/button groups and conditional settings
+  # There are more instructions on https://flourish.studio/developers/reference/template-yml.html
+
+  - Template settings # Headings can be used to break up the settings into collapsible sections
+  - property: example_setting # Refers to a property in the template's state object
+    name: Example setting # Display name for the settings panel
+    description: Explanation of example setting # Optional description for the settings panel
+    type: number # See available types above
+    width: half # Set the width of the setting box. Choose between quarter, half, three quarters or full
+    # new_section: Section name # Add an optional divider line and section name
+
+  - Layout
+  - property: layout
+    import: "@flourish/layout" # The import property, imports a Flourish module settings block
+
+data:
+  # The data section determines how data is made available to your template,
+  # and the sample data that is used. See the documentation.
+  - Fruits # Optinal title for this section, showin in the UI
+  - Binding description # Optional description for this section, shown in the UI
+  - name: Label # Name shown in UI
+    description: Name of fruits # Optional description for the UI
+    key: label # The key used to access the data in this binding in the template code
+    dataset: fruit # Which dataset this binding is part of
+    type: column # Specify if it requires a single "column" or multiple "columns"
+    column: "Data::A" # The default values are drawn from column A of `Data.csv`
+    # optional: true # Default values can be omitted for an optional binding
+  - key: values
+    dataset: fruit
+    name: Values
+    type: columns
+    columns: "Data::B-C"
