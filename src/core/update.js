@@ -1,4 +1,4 @@
-import { layout } from "./init";
+import { layout } from "../init";
 
 export default function() {
 	layout.update();
