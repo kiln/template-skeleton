@@ -14,10 +14,10 @@ This skeleton template also uses a module called Flourish Layout. This module se
 
 ### Other Flourish modules
 We're adding more and more modules to make life of a template developer easier. We already have modules for
-- [Color palettes](https://github.com/kiln/flourish-custom-colors)
-- [Popups](https://github.com/kiln/flourish-data-popup)
-- [Slider](https://github.com/kiln/flourish-slider)
-- [Controls](https://github.com/kiln/flourish-controls)
+- [Color palettes](https://www.npmjs.com/package/@flourish/custom-colors)
+- [Popups](https://www.npmjs.com/package/@flourish/data-popup)
+- [Slider](https://www.npmjs.com/package/@flourish/slider)
+- [Controls](https://www.npmjs.com/package/@flourish/controls)
 
 ## Questions?
 For more information, checkout our [Developer documentation](https://flourish.studio/developers/), or check out our [help pages](https://flourish.studio/developers/help/)
