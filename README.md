@@ -19,5 +19,8 @@ We're adding more and more modules to make life of a template developer easier. 
 - [Slider](https://www.npmjs.com/package/@flourish/slider)
 - [Controls](https://www.npmjs.com/package/@flourish/controls)
 
+### Less
+This template uses [Less](http://lesscss.org/#overview), which is a language extension for CSS. It allows you to do mixins, nesting, variables and many other things. It compiles into `static/style.css` which is being referenced in `index.html`. If you prefer, you can remove the compiler from `package.json` and write your css in `static/style.css` directly.
+
 ## Questions?
 For more information, checkout our [Developer documentation](https://flourish.studio/developers/), or check out our [help pages](https://flourish.studio/developers/help/)
