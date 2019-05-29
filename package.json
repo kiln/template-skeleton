@@ -10,8 +10,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "less": "lessc --plugin=less-plugin-clean-css --source-map less/style.less static/style.css",
-    "cypress": "cypress open"
+    "less": "lessc --plugin=less-plugin-clean-css --source-map less/style.less static/style.css"
   },
   "dependencies": {
     "@flourish/layout": "^1.0.2",
@@ -20,9 +19,5 @@
     "rollup": "^0.67.4",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^6.0.0"
-  },
-  "devDependencies": {
-    "@flourish/cypress": "^1.1.1",
-    "cypress": "^3.3.0"
   }
 }
