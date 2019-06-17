@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "less": "lessc --plugin=less-plugin-clean-css --source-map less/style.less static/style.css"
+    "less": "lessc --plugin=less-plugin-clean-css --source-map less/style.less static/style.css",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@flourish/layout": "^4.1.0",
