@@ -13,10 +13,10 @@
     "less": "lessc --plugin=less-plugin-clean-css --source-map less/style.less static/style.css"
   },
   "dependencies": {
-    "@flourish/layout": "^4.0.0",
-    "less": "^3.11.1",
+    "@flourish/layout": "^4.1.0",
+    "less": "^3.12.2",
     "less-plugin-clean-css": "^1.5.1",
-    "rollup": "^2.7.3",
+    "rollup": "^2.34.2",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-uglify": "^6.0.4"
   }
