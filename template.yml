@@ -50,6 +50,10 @@ settings:
     width: half # Set the width of the setting box. Choose between quarter, half, three quarters or full
     # new_section: Section name # Add an optional divider line and section name
 
+  - Colors
+  - property: color
+    import: "@flourish/colors"
+
   - Layout
   - property: layout
     import: "@flourish/layout" # The import property, imports a Flourish module settings block
